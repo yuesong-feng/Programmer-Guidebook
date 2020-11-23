@@ -6,8 +6,6 @@
 
 答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
 
- 
-
 示例 1：
 
     输入：n = 2
@@ -16,15 +14,11 @@
 
     输入：n = 5
     输出：5
- 
-
 提示：
 
     0 <= n <= 100
-
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof
-
 
 ```python
 def fib(self, n: int) -> int:
