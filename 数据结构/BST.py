@@ -1,20 +1,11 @@
-二叉查找树（英语：Binary Search Tree），也称为二叉搜索树、有序二叉树（Ordered Binary Tree）或排序二叉树（Sorted Binary Tree），是指一棵空树或者具有下列性质的二叉树：
+# 二叉树节点的定义
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
-1. 若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节点的值；
-2. 若任意节点的右子树不空，则右子树上所有节点的值均大于它的根节点的值；
-3. 任意节点的左、右子树也分别为二叉查找树；
-4. 没有键值相等的节点。
-
-二叉查找树的查找、插入的时间复杂度较低，为O(log n)
-
-二叉查找树的中序遍历结果是一个递增的数组
-
-
-> 完整代码：[BST.py](/BST.py)
-### BST查找
-
-```python
-# 二叉查找树的查找
+# 二叉查找树的搜索
 def searchBST(self, root: TreeNode, x: int) -> TreeNode:
     # 如果树为空，则肯定不存在值为x的节点，返回空
     if root is None:
@@ -33,12 +24,8 @@ def searchBST(self, root: TreeNode, x: int) -> TreeNode:
             p = p.right
     # 若一直查找到空节点，说明整个树中没有值为x的节点，返回空
     return None
-```
 
 
-### BST插入
-
-```python
 # 二叉查找树插入，将x插入根节点为root的二叉查找树
 def insertIntoBST(self, root: TreeNode, x: int) -> TreeNode:
     # 树为空，则直接插入到根节点
@@ -64,10 +51,3 @@ def insertIntoBST(self, root: TreeNode, x: int) -> TreeNode:
     else:
         parent.right = TreeNode(x)
     return root
-```
-
-### BST删除
-
-1. 待删除的节点是叶子节点（左右孩子均为空），则直接删除。
-2. 待删除的节点有且仅有一个孩子，
-3. 
