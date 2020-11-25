@@ -51,3 +51,77 @@ def insertIntoBST(self, root: TreeNode, x: int) -> TreeNode:
     else:
         parent.right = TreeNode(x)
     return root
+
+# 二叉树删除节点
+def deleteNode(self, root: TreeNode, key: int) ->TreeNode:
+    # 首先要找到值为key的节点p，用parent记录p的父节点
+    p = root
+    parent = p
+    while p is not None:
+        if p.val == key:
+            break
+        elif p.val > key:
+            parent = p
+            p = p.left
+        elif p.val < key:
+            parent = p
+            p = p.right
+    if p is None:
+        print("树中没有值为key的节点，无法删除！")
+        return root
+    # 到这里，p是值为key的节点，parent是p的父节点
+    # 1. 如果p是叶子节点
+    if p.left is None and p.right is None:
+        # 判断p是parent的左孩子还是右孩子
+        if parent.left is p:
+            parent.left = None
+        elif parent.right is p:
+            parent.right = None
+        # p是根节点
+        elif parent is p:
+            return None
+        return root
+    # 2.1 如果p只有左孩子
+    elif p.left is not None and p.right is None:
+        if parent.left is p:
+            parent.left = p.left
+        elif parent.right is p:
+            parent.right = p.left
+        elif parent is p:
+            return p.left
+        return root
+    # 2.2 如果p只有右孩子
+    elif p.left is None and p.right is not None:
+        if parent.left is p:
+            parent.left = p.right
+        elif parent.right is p:
+            parent.right = p.right
+        elif parent is p:
+            return p.right
+        return root
+    # 3. 如果p有两个孩子
+    elif p.left is not None and p.right is not None:
+        # 3.1. 将p的直接后继node的值拷贝到p
+        # 3.1.1 先找到p的直接后继node，node_parent是nod的父节点
+        node_parent = p
+        node = p.right
+        while node.left is not None:
+            node_parent = node
+            node = node.left
+        # 此时node是待删除节点p的直接后继,node_parentnode的父节点。
+        # 3.1.2 将node的值拷贝到p
+        p.val = node.val
+        # 3.2. 删除p的直接后继node。由于node是p的右子树的左节点，那么node肯定没有左孩子，可能有右孩子。
+        # 3.2.1 如果node没有右孩子
+        if node.right is None:
+            if node_parent.left is node:
+                node_parent.left = None
+            elif node_parent.right is node:
+                node_parent.right = None
+        # 3.2.2 如果node有右孩子
+        elif node.right is not None:
+            if node_parent.left is node:
+                node_parent.left = node.right
+            elif node_parent.right is node:
+                node_parent.right = node.right
+        return root
