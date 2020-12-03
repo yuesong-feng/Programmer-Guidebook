@@ -44,4 +44,21 @@ def method(self, nums = [1, 2, 3]):
 ```
 这样就可以不穿参数，不穿参数的时候nums设置为默认值[1, 2, 3]，传递参数的时候nums覆盖这个默认值。
 
-注意，类中定义的方法`method`有两个参数`self`和`nums`，在函数中使用的时候，第一个参数是被忽略了的，从第二个参数开始传递。也就是说，函数中传递的`array`是对应的类方法的定义中的`nums`，而`self`是规定好的、指向类的实例a的指针。
+注意，类中定义的方法`method`有两个参数`self`和`nums`，在函数被使用的时候，第一个参数是被忽略了的，从第二个参数开始传递。也就是说，函数中传递的`array`是对应的类方法的定义中的`nums`，而`self`是规定好的、指向类的实例a的指针。
+
+如果类中有两个方法，self指针可以很方便地调用同类中的方法。例如：
+```python
+class Solution:
+    def __init__(self):
+        self.val = 100
+    def method1(self, nums):
+        self.method2(nums)
+    def method2(self, nums):
+        print(nums)
+array = [1, 2, 3]
+a = Solution()
+a.method1(array)
+```
+`method2`方法是输出传递进的参数`nums`，那么`method1`方法呢？
+
+`method1`方法负责接收参数`nums`，并把`nums`传递给`method2`。由于`method1`、`method2`都在类`Solution`中，要在`method1`中调用`method2`，则需要用`self.method2`说明，`method2`也是类中的方法而不是全局方法。
