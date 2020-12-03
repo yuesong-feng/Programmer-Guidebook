@@ -11,6 +11,7 @@
 ***
 ### Python基础
 - [Python3必备刷题基础](/Python基础/Python3.md)
+- [Python中的类与self](/Python基础/Python中的类与self.md)
 
 
 ### 数据结构
