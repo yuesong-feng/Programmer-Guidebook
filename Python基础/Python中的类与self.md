@@ -11,6 +11,7 @@ Python中规定，一个类的函数的第一个参数是实例对象本身,相�
 class Solution:
     def __init__(self):
         self.val = 100
+
 a = Solution()
 print(a.val)
 ```
@@ -22,8 +23,10 @@ print(a.val)
 class Solution:
     def __init__(self):
         self.val = 100
+
     def method(self, nums):
         print(nums)
+
 a = Solution()
 a.method()
 ```
@@ -32,8 +35,10 @@ a.method()
 class Solution:
     def __init__(self):
         self.val = 100
+
     def method(self, nums):
         print(nums)
+
 array = [1, 2, 3]
 a = Solution()
 a.method(array)
@@ -51,14 +56,17 @@ def method(self, nums = [1, 2, 3]):
 class Solution:
     def __init__(self):
         self.val = 100
+
     def method1(self, nums):
         self.method2(nums)
+
     def method2(self, nums):
         print(nums)
+        
 array = [1, 2, 3]
 a = Solution()
 a.method1(array)
 ```
 `method2`方法是输出传递进的参数`nums`，那么`method1`方法呢？
 
-`method1`方法负责接收参数`nums`，并把`nums`传递给`method2`。由于`method1`、`method2`都在类`Solution`中，要在`method1`中调用`method2`，则需要用`self.method2`说明，`method2`也是类中的方法而不是全局方法。
+`method1`方法负责接收参数`nums`，并把`nums`传递给`method2`。由于`method1`、`method2`都在类`Solution`中，要在`method1`中调用`method2`，则需要用`self.method2`说明`method2`也是类中的方法而不是全局方法。
