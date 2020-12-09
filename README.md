@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # Programmer-Guidebook
 
 如果你学累了，可以去我的古典吉他网听首歌：[古典吉他网](https://classicalguitar.cn/)
@@ -30,8 +32,9 @@
 
 
 ### 机器学习
-- [SVM(支持向量机)](/机器学习/SVM.md)
 - [朴素贝叶斯分类器](/机器学习/朴素贝叶斯分类器.md)
+- [常见激活函数（Sigmod、tanh、ReLU等）](/机器学习/常见激活函数.md)
+
 ### 数学
 - [程序员必备数学基础](/数学/程序员必备数学基础.md)
 
