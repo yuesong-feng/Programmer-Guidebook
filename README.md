@@ -12,6 +12,8 @@
 ### Python基础
 - [Python3必备刷题基础](/Python基础/Python3.md)
 - [Python中的类与self](/Python基础/Python中的类与self.md)
+- [Python删除全部已安装的pip包](/Python基础/Python删除全部已安装的pip包.md)
+- [python爬虫爬取必应壁纸]()
 
 
 ### 数据结构
@@ -43,4 +45,27 @@
 <!-- ### 数学 -->
 <!-- - [程序员必备数学基础](/数学/程序员必备数学基础.md) -->
 
+### Vue
+- [Vue父组件主动获取子组件的值和方法](/Vue/Vue父组件主动获取子组件的值和方法.md)
 
+
+### Linux相关
+- [Linux允许root用户远程登录SSH](/Linux相关/Linux允许root用户远程登录SSH.md)
+- [pip更换国内源、提高下载速度](/Linux相关/pip更换国内源、提高下载速度.md)
+- [npm更换国内源、提高下载速度](/Linux相关/npm更换国内源、提高下载速度.md)
+- [更新node.js、npm](/Linux相关/更新node.js、npm.md)
+- [配置git](/Linux相关/配置git.md)
+- [ssh免密登录](/Linux相关/ssh免密登录.md)
+- [Linux安装并初始化mysql数据库](/Linux相关/Linux安装并初始化mysql数据库.md)
+
+### 树莓派
+- [树莓派无网线、无显示器安装系统](/树莓派/树莓派无网线、无显示器安装系统.md)
+- [树莓派搭建个人博客服务器（Nginx+PHP+mysql+typecho）](/树莓派/树莓派搭建个人博客服务器（Nginx+PHP+mysql+typecho）.md)
+- [Pi Dashboard (Pi 仪表盘)监控树莓派状态](/树莓派/Pi_dashboard(Pi仪表盘)监控树莓派状态.md)
+- [外网访问树莓派服务器（自购域名+Sakura Frp内网穿透）](/树莓派/外网访问树莓派服务器（自购域名+Sakura-Frp内网穿透）.md)
+
+### Typecho
+- [解决typecho后台此文件无法写入](/Typecho/解决typecho后台此文件无法写入.md)
+- [Typecho博客首页和分类页不显示文章全文](/Typecho/Typecho博客首页和分类页不显示文章全文.md)
+- [Typecho添加统计网站总访问数功能](/Typecho/Typecho添加统计网站总访问数功能.md)
+- [Typecho+Nginx打开地址重写功能](Typecho/Typecho+Nginx打开地址重写功能.md)
