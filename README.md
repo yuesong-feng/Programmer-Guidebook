@@ -33,7 +33,7 @@
 ### 机器学习
 经典机器学习算法的纯Python+NumPy实现：[机器学习算法包](https://github.com/yuesong-feng/Machine-Learning-Algorithms)
 
-- [Concept Whitening(Said, Better than BatchNorm)](/机器学习/CW.md)
+- [Concept Whitening(for Interpretable Image Recognition)](/机器学习/CW.md)
 - [朴素贝叶斯分类器](/机器学习/朴素贝叶斯分类器.md)
 - [常见激活函数（Sigmod、tanh、ReLU等）](/机器学习/常见激活函数.md)
 - [纯Python+numpy实现线性回归]()
