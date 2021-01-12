@@ -11,7 +11,6 @@
 - [Python3必备刷题基础](/Python基础/Python3.md)
 - [Python中的类与self](/Python基础/Python中的类与self.md)
 - [Python删除全部已安装的pip包](/Python基础/Python删除全部已安装的pip包.md)
-- [python爬虫爬取必应壁纸]()
 
 
 ### 数据结构
@@ -36,9 +35,9 @@
 - [Concept Whitening(for Interpretable Image Recognition)](/机器学习/CW.md)
 - [朴素贝叶斯分类器](/机器学习/朴素贝叶斯分类器.md)
 - [常见激活函数（Sigmod、tanh、ReLU等）](/机器学习/常见激活函数.md)
-- [纯Python+numpy实现线性回归]()
-- [梯度下降法]()
-- [SVM_kernels](/机器学习/SVM_kernels.md)
+<!-- - [纯Python+numpy实现线性回归]() -->
+<!-- - [梯度下降法]() -->
+<!-- - [SVM_kernels](/机器学习/SVM_kernels.md) -->
 
 <!-- ### 数学 -->
 <!-- - [程序员必备数学基础](/数学/程序员必备数学基础.md) -->
