@@ -2,9 +2,7 @@
 
 如果你学累了，可以去我的古典吉他网听首歌：[古典吉他网](https://classicalguitar.cn/)
 
-或者你精神抖擞、想学点其他的，可以去我的CSDN博客看看：[CSDN博客](https://blog.csdn.net/fengyuesong)
-
-如果您觉得本教程有帮助，可以请我喝一杯星巴克
+在github写好后会同步到CSDN博客：[CSDN博客](https://blog.csdn.net/fengyuesong)
 
 如果你想贡献一点什么，欢迎PR！
 
