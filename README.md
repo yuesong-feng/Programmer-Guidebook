@@ -31,6 +31,7 @@
 
 ### 机器学习
 经典机器学习算法的纯Python+NumPy实现：[机器学习算法包](https://github.com/yuesong-feng/Machine-Learning-Algorithms)
+- [正则化](/机器学习/正则化.md)
 - [逻辑回归](/机器学习/逻辑回归.md)
 - [Sigmoid为什么会梯度消失](/机器学习/Sigmoid为什么会梯度消失.md)
 - [Concept Whitening(for Interpretable Image Recognition)](/机器学习/CW.md)
