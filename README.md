@@ -57,6 +57,7 @@
 - [配置git](/Linux相关/配置git.md)
 - [ssh免密登录](/Linux相关/ssh免密登录.md)
 - [Linux安装并初始化mysql数据库](/Linux相关/Linux安装并初始化mysql数据库.md)
+- [homebrew安装、换源](/Linux相关/homebrew安装、换源.md)
 
 ### 树莓派
 - [树莓派无网线、无显示器安装系统](/树莓派/树莓派无网线、无显示器安装系统.md)
